@@ -1,2 +1,3 @@
 # ENLACE
-Un proyecto educativo con tres perspectivas, una guía docente para secundaria con un proyecto interdisciplinar STEM para enseñar programación, fabricación digital y multimedia, un proyecto de creación de contenidos narrativos para primaria que fomenta la cooperación y el desarrollo de habilidades digitales y un proyecto para edades más tempranas (prelectoras o lectoras tempranas) para alejar las pantallas del aula y favorecer la interacción tangible.
+
+Web estática del proyecto ENLACE.
