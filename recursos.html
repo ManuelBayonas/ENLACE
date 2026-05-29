@@ -175,19 +175,59 @@
     <section>
       <div class="section-title">
         <span>04</span>
-        <h2>Imágenes recomendadas</h2>
+        <h2>Galería del proyecto</h2>
       </div>
 
-      <div class="grid three image-grid">
-        <figure class="image-frame card-image">
-          <img src="img/dispositivo-completo.jpg" alt="Prototipo completo de ENLACE" loading="lazy" />
-        </figure>
-        <figure class="image-frame card-image">
-          <img src="img/electronica-interior.jpg" alt="Perfboard y electrónica interior de ENLACE" loading="lazy" />
-        </figure>
-        <figure class="image-frame card-image">
-          <img src="img/lectura-nfc.jpg" alt="Captura del modo lector de etiquetas NFC" loading="lazy" />
-        </figure>
+      <p class="wide-text gallery-intro">
+        Imágenes del prototipo, la electrónica y el proceso de fabricación para documentar el proyecto
+        y facilitar que pueda replicarse o adaptarse en otros contextos educativos.
+      </p>
+
+      <div class="carousel" aria-label="Galería de imágenes del proyecto ENLACE">
+        <button class="carousel-btn carousel-btn-prev" type="button" aria-label="Imagen anterior" data-carousel-prev>
+          ←
+        </button>
+
+        <div class="carousel-track" tabindex="0">
+          <figure class="carousel-slide">
+            <img src="img/dispositivo-completo.jpg" alt="Prototipo completo de ENLACE" loading="lazy" />
+            <figcaption>Dispositivo completo</figcaption>
+          </figure>
+
+          <figure class="carousel-slide">
+            <img src="img/enlace-hero-desktop.jpg" alt="Vista del dispositivo ENLACE sobre una mesa" loading="lazy" />
+            <figcaption>Vista general del prototipo</figcaption>
+          </figure>
+
+          <figure class="carousel-slide">
+            <img src="img/fichas-nfc.jpg" alt="Fichas NFC junto al dispositivo ENLACE" loading="lazy" />
+            <figcaption>Fichas NFC y objetos de interacción</figcaption>
+          </figure>
+
+          <figure class="carousel-slide">
+            <img src="img/electronica-interior.jpg" alt="Electrónica interior del dispositivo ENLACE" loading="lazy" />
+            <figcaption>Electrónica interior</figcaption>
+          </figure>
+
+          <figure class="carousel-slide">
+            <img src="img/montaje-electronico.jpg" alt="Montaje electrónico del prototipo ENLACE" loading="lazy" />
+            <figcaption>Montaje electrónico</figcaption>
+          </figure>
+
+          <figure class="carousel-slide">
+            <img src="img/diseno-3d.jpg" alt="Proceso de diseño 3D de la carcasa" loading="lazy" />
+            <figcaption>Diseño 3D de la carcasa</figcaption>
+          </figure>
+
+          <figure class="carousel-slide">
+            <img src="img/lectura-nfc.jpg" alt="Captura del modo lector de etiquetas NFC" loading="lazy" />
+            <figcaption>Modo lector NFC</figcaption>
+          </figure>
+        </div>
+
+        <button class="carousel-btn carousel-btn-next" type="button" aria-label="Imagen siguiente" data-carousel-next>
+          →
+        </button>
       </div>
     </section>
   </main>

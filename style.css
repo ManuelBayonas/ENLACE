@@ -680,3 +680,102 @@ figure {
     max-height: 320px;
   }
 }
+
+/* Galería / carrusel de recursos */
+.gallery-intro {
+  margin-bottom: 24px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(280px, 72%);
+  gap: 18px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 4px;
+  padding: 4px 4px 14px;
+  scrollbar-width: thin;
+}
+
+.carousel-slide {
+  scroll-snap-align: start;
+  margin: 0;
+  background: var(--paper);
+  border: 2px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.carousel-slide img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 14 / 10;
+  object-fit: cover;
+  border-bottom: 2px solid var(--line);
+}
+
+.carousel-slide figcaption {
+  padding: 12px 14px;
+  font-size: 0.92rem;
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 42%;
+  z-index: 2;
+  width: 46px;
+  height: 46px;
+  border: 2px solid var(--line);
+  background: var(--yellow);
+  color: var(--ink);
+  font-size: 1.4rem;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.16);
+}
+
+.carousel-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.18);
+}
+
+.carousel-btn-prev {
+  left: -12px;
+}
+
+.carousel-btn-next {
+  right: -12px;
+}
+
+@media (max-width: 760px) {
+  .carousel-track {
+    grid-auto-columns: 88%;
+  }
+
+  .carousel-btn {
+    position: static;
+    margin: 10px 8px 0 0;
+  }
+
+  .carousel {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .carousel-track {
+    flex-basis: 100%;
+    order: 1;
+  }
+
+  .carousel-btn-prev,
+  .carousel-btn-next {
+    order: 2;
+  }
+}
